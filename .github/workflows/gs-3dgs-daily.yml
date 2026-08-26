@@ -1,0 +1,153 @@
+name: GS 3DGS Daily Intelligence
+
+on:
+  schedule:
+    # Every day at 10:00 Asia/Shanghai (UTC+8)
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/gs-3dgs-daily.yml"
+      - "automation/gs-3dgs-intelligence/**"
+
+permissions:
+  contents: write
+  issues: write
+  models: read
+
+concurrency:
+  group: gs-3dgs-daily-intelligence
+  cancel-in-progress: false
+
+jobs:
+  collect-analyze-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run unit tests
+        run: >-
+          python -m unittest discover
+          -s automation/gs-3dgs-intelligence/test
+          -p "test_*.py"
+          -v
+
+      - name: Prepare output paths
+        id: paths
+        shell: bash
+        run: |
+          set -euo pipefail
+          report_date="$(TZ=Asia/Shanghai date +%F)"
+          echo "report_date=${report_date}" >> "$GITHUB_OUTPUT"
+          mkdir -p _out/papers
+
+      - name: Collect, deduplicate and analyze
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_MODELS_MODEL: openai/gpt-4.1
+        run: |
+          set -euo pipefail
+          python automation/gs-3dgs-intelligence/run.py \
+            --latest-report notebook/GS-3DGS/latest.md \
+            --output _out/report.md \
+            --raw-json _out/raw.json \
+            --papers-dir _out/papers \
+            --ris _out/references.ris
+
+      - name: Publish report into notebook
+        env:
+          REPORT_DATE: ${{ steps.paths.outputs.report_date }}
+        run: |
+          set -euo pipefail
+          target="notebook/GS-3DGS"
+          mkdir -p "${target}/daily"
+          cp _out/report.md "${target}/daily/${REPORT_DATE}.md"
+          cp _out/report.md "${target}/latest.md"
+          python - <<'PY'
+          from pathlib import Path
+
+          root = Path("notebook/GS-3DGS")
+          reports = sorted((root / "daily").glob("*.md"), reverse=True)
+          lines = [
+              "# GS / 3DGS 技术情报 Notebook",
+              "",
+              "- 自动更新：每天 10:00（Asia/Shanghai）",
+              "- 增量窗口：正常情况下为过去24小时；停跑后从上一报告末端自动补齐。",
+              "- 最新报告：[latest.md](latest.md)",
+              "- 每次运行的原始候选JSON、RIS和官方arXiv PDF保存在对应GitHub Actions Artifact。",
+              "",
+              "## 日报归档",
+              "",
+          ]
+          lines.extend(f"- [{path.stem}](daily/{path.name})" for path in reports)
+          (root / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+          PY
+
+      - name: Commit notebook update
+        env:
+          REPORT_DATE: ${{ steps.paths.outputs.report_date }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add notebook/GS-3DGS
+          if git diff --cached --quiet; then
+            echo "Notebook already contains this report."
+          else
+            git commit -m "chore(gs-intel): publish daily report ${REPORT_DATE} [skip ci]"
+            git push
+          fi
+
+      - name: Upload report, raw data, RIS and original PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: GS-3DGS-intelligence-${{ steps.paths.outputs.report_date }}
+          path: _out/
+          if-no-files-found: error
+          retention-days: 30
+          compression-level: 0
+
+      - name: Create or update notification issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPORT_DATE: ${{ steps.paths.outputs.report_date }}
+        run: |
+          set -euo pipefail
+          export TITLE="GS/3DGS 技术情报｜${REPORT_DATE}"
+          export REPORT_URL="https://github.com/${GITHUB_REPOSITORY}/blob/main/notebook/GS-3DGS/daily/${REPORT_DATE}.md"
+          python - <<'PY'
+          import os
+          from pathlib import Path
+
+          report = Path("_out/report.md").read_text(encoding="utf-8")
+          body = (
+              "自动日报已完成并写入 GS/3DGS notebook。\n\n"
+              f"[查看完整报告]({os.environ['REPORT_URL']})\n\n"
+              + report
+          )
+          if len(body) > 60_000:
+              body = body[:59_500].rstrip() + "\n\n> Issue正文已截断，请打开notebook查看完整报告。\n"
+          Path("_out/issue-body.md").write_text(body, encoding="utf-8")
+          PY
+          issue_number="$(
+            gh issue list \
+              --state all \
+              --limit 100 \
+              --json number,title \
+              --jq '.[] | select(.title == env.TITLE) | .number' \
+              | head -n 1
+          )"
+          if [ -n "${issue_number}" ]; then
+            gh issue edit "${issue_number}" --title "${TITLE}" --body-file _out/issue-body.md
+          else
+            gh issue create --title "${TITLE}" --body-file _out/issue-body.md
+          fi
