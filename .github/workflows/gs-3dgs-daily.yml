@@ -10,7 +10,6 @@ on:
       - main
     paths:
       - ".github/workflows/gs-3dgs-daily.yml"
-      - "automation/gs-3dgs-intelligence/**"
 
 permissions:
   contents: write
@@ -104,10 +103,12 @@ jobs:
             echo "Notebook already contains this report."
           else
             git commit -m "chore(gs-intel): publish daily report ${REPORT_DATE} [skip ci]"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
 
       - name: Upload report, raw data, RIS and original PDFs
+        if: ${{ always() && hashFiles('_out/report.md') != '' }}
         uses: actions/upload-artifact@v4
         with:
           name: GS-3DGS-intelligence-${{ steps.paths.outputs.report_date }}
