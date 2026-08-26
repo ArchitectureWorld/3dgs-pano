@@ -18,7 +18,18 @@
 - Hugging Face Models / Spaces
 - Reddit public JSON
 - Bing News RSS
-- GitHub Models：用于中文综合研判；不可用时明确降级，不阻断基础报告
+
+基础采集、去重、主题分类、成熟度和工程判断不依赖大模型。中文综合研判采用**可选的 OpenAI-compatible Chat Completions 接口**；未配置或接口失败时会明确记录 `skipped/degraded`，但不会阻断基础日报。
+
+可选仓库 Secrets：
+
+```text
+GS_INTELLIGENCE_MODEL_BASE_URL=https://<provider>/v1
+GS_INTELLIGENCE_MODEL_API_KEY=<secret>
+GS_INTELLIGENCE_MODEL_NAME=<model-name>
+```
+
+GitHub Models 已退役，不再作为默认或备用推理服务。
 
 ## 输出
 
@@ -63,4 +74,5 @@ python -m unittest discover \
 - 原论文、正式 release 与可核验代码提交优先于媒体和社区转发。
 - 数据源不可用会记录为 `degraded`，不会伪装成“今日无新增”。
 - arXiv PDF 会校验文件头、体积和 SHA-256。
+- 模型只对已经收集的候选进行证据约束分析，不能补造论文、数字、代码状态或链接。
 - RIS 只是 Zotero 的下游导入材料；没有真实 Zotero Web API 或可写 Connector 时，不得标记为“已同步 Zotero”。
