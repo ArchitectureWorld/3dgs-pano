@@ -27,7 +27,7 @@ class ResolveWindowStartTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             latest = Path(tmp) / "latest.md"
             latest.write_text(
-                "---\nwindow_end_utc: 2026-08-20T01:00:00Z\n---\n# report\n",
+                "---\nwindow_end_utc: 2026-08-20T02:00:00Z\n---\n# report\n",
                 encoding="utf-8",
             )
 
@@ -36,7 +36,7 @@ class ResolveWindowStartTests(unittest.TestCase):
                 baseline=datetime(2026, 8, 13, 2, 0, tzinfo=UTC),
             )
 
-        self.assertEqual(result, datetime(2026, 8, 20, 1, 0, tzinfo=UTC))
+        self.assertEqual(result, datetime(2026, 8, 20, 2, 0, tzinfo=UTC))
 
     def test_falls_back_to_baseline_when_latest_report_missing(self) -> None:
         result = resolve_window_start(
@@ -147,14 +147,14 @@ class ReportingTests(unittest.TestCase):
         report = render_report(
             items=items,
             source_status={"arXiv": "ok", "Reddit": "degraded: HTTP 403"},
-            window_start=datetime(2026, 8, 20, tzinfo=UTC),
-            window_end=datetime(2026, 8, 26, tzinfo=UTC),
-            generated_at=datetime(2026, 8, 26, 1, 0, tzinfo=UTC),
+            window_start=datetime(2026, 8, 25, 2, 0, tzinfo=UTC),
+            window_end=datetime(2026, 8, 26, 2, 0, tzinfo=UTC),
+            generated_at=datetime(2026, 8, 26, 2, 0, tzinfo=UTC),
             ai_analysis=None,
         )
 
-        self.assertIn("window_end_utc: 2026-08-26T00:00:00Z", report)
-        self.assertIn("本周最重要的5项更新", report)
+        self.assertIn("window_end_utc: 2026-08-26T02:00:00Z", report)
+        self.assertIn("今日最重要的5项更新", report)
         self.assertIn("Paper 1", report)
         self.assertIn("Paper 5", report)
         self.assertNotIn("| 6 | Paper 6 |", report)
