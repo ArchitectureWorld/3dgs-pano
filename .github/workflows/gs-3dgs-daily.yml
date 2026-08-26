@@ -5,16 +5,10 @@ on:
     # Every day at 10:00 Asia/Shanghai (UTC+8)
     - cron: "0 2 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/gs-3dgs-daily.yml"
 
 permissions:
   contents: write
   issues: write
-  models: read
 
 concurrency:
   group: gs-3dgs-daily-intelligence
@@ -49,10 +43,9 @@ jobs:
           echo "report_date=${report_date}" >> "$GITHUB_OUTPUT"
           mkdir -p _out/papers
 
-      - name: Collect, deduplicate and analyze
+      - name: Collect and deduplicate public intelligence
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          GITHUB_MODELS_MODEL: openai/gpt-4.1
         run: |
           set -euo pipefail
           python automation/gs-3dgs-intelligence/run.py \
@@ -60,7 +53,19 @@ jobs:
             --output _out/report.md \
             --raw-json _out/raw.json \
             --papers-dir _out/papers \
-            --ris _out/references.ris
+            --ris _out/references.ris \
+            --skip-ai
+
+      - name: Add optional model-assisted Chinese synthesis
+        env:
+          GS_INTELLIGENCE_MODEL_BASE_URL: ${{ secrets.GS_INTELLIGENCE_MODEL_BASE_URL }}
+          GS_INTELLIGENCE_MODEL_API_KEY: ${{ secrets.GS_INTELLIGENCE_MODEL_API_KEY }}
+          GS_INTELLIGENCE_MODEL_NAME: ${{ secrets.GS_INTELLIGENCE_MODEL_NAME }}
+        run: |
+          set -euo pipefail
+          python automation/gs-3dgs-intelligence/model_postprocess.py \
+            --report _out/report.md \
+            --raw-json _out/raw.json
 
       - name: Publish report into notebook
         env:
