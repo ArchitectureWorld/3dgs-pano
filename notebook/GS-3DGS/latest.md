@@ -1,30 +1,30 @@
 ---
 schema: architectureworld/gs-intelligence/v1
-window_start_utc: 2026-10-24T06:44:46Z
-window_end_utc: 2026-10-25T07:09:29Z
-generated_at_utc: 2026-10-25T07:09:29Z
-item_count: 60
+window_start_utc: 2026-10-25T07:09:29Z
+window_end_utc: 2026-10-26T07:16:58Z
+generated_at_utc: 2026-10-26T07:16:58Z
+item_count: 71
 ---
 
-# Gaussian Splatting（GS/3DGS）技术情报｜2026-10-25
+# Gaussian Splatting（GS/3DGS）技术情报｜2026-10-26
 
-**统计窗口：** 2026-10-24T06:44:46Z — 2026-10-25T07:09:29Z  
+**统计窗口：** 2026-10-25T07:09:29Z — 2026-10-26T07:16:58Z  
 **运行方式：** 每日自动增量；如发生停跑，则从上一份报告末端连续补齐，不丢失中间日期。
 
 ## 执行摘要
 
-本轮保留 **60** 项去重后的有效线索：真正新增论文 **0** 项、实质论文修订 **0** 项、代码/版本/项目更新 **60** 项。
+本轮保留 **71** 项去重后的有效线索：真正新增论文 **0** 项、实质论文修订 **0** 项、代码/版本/项目更新 **71** 项。
 排序优先级为原始论文与正式发布，其次是实质代码更新；媒体与社区转发不会压过原始来源。
 
 ## 今日最重要的5项更新
 
 | 排名 | 内容 | 类型 | 来源 | 成熟度 | 工程优先级 |
 |---:|---|---|---|---|---|
-| 1 | [longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
-| 2 | [MrNeRF/LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
-| 3 | [luohongk/Embodied-AI-Daily](https://github.com/luohongk/Embodied-AI-Daily) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
-| 4 | [mosure/bevy_gaussian_splatting](https://github.com/mosure/bevy_gaussian_splatting) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
-| 5 | [WilliamLiu-1997/Gaussian-Splat-Lite](https://github.com/WilliamLiu-1997/Gaussian-Splat-Lite) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
+| 1 | [MrNeRF/LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
+| 2 | [harry7557558/spirula-studio](https://github.com/harry7557558/spirula-studio) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
+| 3 | [longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
+| 4 | [luohongk/Embodied-AI-Daily](https://github.com/luohongk/Embodied-AI-Daily) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
+| 5 | [mlslabs/MLSLabsGaussianSplattingRenderer-UE](https://github.com/mlslabs/MLSLabsGaussianSplattingRenderer-UE) | 新项目/近期活跃 | GitHub Search | E1 | P2 |
 
 ## 分类详述
 
@@ -32,7 +32,7 @@ item_count: 60
 
 - **主题：** 训练与优化
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T00:38:34Z
+- **发布时间/更新时间：** 2026-10-26T07:15:00Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** Train, inspect, edit, automate, and export 3D Gaussian Splatting scenes from a single native application.
 - **成熟度：** E1
@@ -41,24 +41,24 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/MrNeRF/LichtFeld-Studio
 
-### [NYCU-MAPL/CAT-3DGS](https://github.com/NYCU-MAPL/CAT-3DGS)
+### [harry7557558/spirula-studio](https://github.com/harry7557558/spirula-studio)
 
 - **主题：** 训练与优化
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T16:22:42Z
+- **发布时间/更新时间：** 2026-10-26T05:05:24Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** [ ICLR 2025 ] CAT-3DGS: A Context-Adaptive Triplane Approach to Rate-Distortion-Optimized 3DGS Compression
+- **核心内容：** Cross-vendor 3D Gaussian Splatting trainer - video to splat to mesh, Vulkan or CUDA.
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 适合进入训练速度、显存、收敛稳定性和画质的A/B基准。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/NYCU-MAPL/CAT-3DGS
+- **代码仓库：** https://github.com/harry7557558/spirula-studio
 
 ### [shuta-ochiai/Splatelier](https://github.com/shuta-ochiai/Splatelier)
 
 - **主题：** 训练与优化
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T15:40:09Z
+- **发布时间/更新时间：** 2026-10-25T10:46:01Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** Capture, train and view 3D Gaussian Splats entirely on your iPhone.
 - **成熟度：** E1
@@ -67,11 +67,50 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/shuta-ochiai/Splatelier
 
+### [samaust/openftgs](https://github.com/samaust/openftgs)
+
+- **主题：** 训练与优化
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-26T04:13:13Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Independent clean-room implementation of FreeTimeGS (Wang et al., CVPR 2025) in PyTorch: 4D Gaussian splatting for dynamic multi-view video, written from the paper and a public spec, not affiliated with its authors. Apache-2.0. CLI ftgs converts, initializes, trains, renders and evaluates on openftgs-synth datasets.
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合进入训练速度、显存、收敛稳定性和画质的A/B基准。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/samaust/openftgs
+
+### [jacobemanuel/gaussian-splatting-vision-pro](https://github.com/jacobemanuel/gaussian-splatting-vision-pro)
+
+- **主题：** 训练与优化
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-26T05:05:56Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** From 3D model to Gaussian splat to headset: a controlled study with 470 trained models, on-device GPU and thermal measurement and a release that reproduces every number.
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合进入训练速度、显存、收敛稳定性和画质的A/B基准。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/jacobemanuel/gaussian-splatting-vision-pro
+
+### [reukem/viettel-ai-3dgs](https://github.com/reukem/viettel-ai-3dgs)
+
+- **主题：** 训练与优化
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T17:10:46Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Viettel AI Race 2026 - Track 1: 3D Gaussian Splatting for Telecom BTS Digital Twin with Optical Center Shift & SOTA Optimization
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合进入训练速度、显存、收敛稳定性和画质的A/B基准。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/reukem/viettel-ai-3dgs
+
 ### [20kiwy/rustcolmap](https://github.com/20kiwy/rustcolmap)
 
 - **主题：** 训练与优化
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T00:19:24Z
+- **发布时间/更新时间：** 2026-10-25T15:57:05Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** Native Rust incremental Structure-from-Motion (COLMAP-compatible): SIFT, robust matching, incremental mapping, Schur bundle adjustment. Feeds 3D Gaussian Splatting trainers directly.
 - **成熟度：** E1
@@ -80,24 +119,76 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/20kiwy/rustcolmap
 
-### [CJKorn/SurgSegGS](https://github.com/CJKorn/SurgSegGS)
+### [Soham-Gaonkar/Comparing-InstantNGP-and-3DGS](https://github.com/Soham-Gaonkar/Comparing-InstantNGP-and-3DGS)
+
+- **主题：** 训练与优化
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T15:34:10Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Custom dataset of a static scene and comparison between instantngp models and 3d gaussian splatting models on reconstruction quality, rendering time , model size and training time
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合进入训练速度、显存、收敛稳定性和画质的A/B基准。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/Soham-Gaonkar/Comparing-InstantNGP-and-3DGS
+
+### [XiaoBin2001/BoundedGS](https://github.com/XiaoBin2001/BoundedGS)
+
+- **主题：** 训练与优化
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T11:13:49Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** BoundedGS: Memory-Efficient High-Resolution 3DGS Training
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合进入训练速度、显存、收敛稳定性和画质的A/B基准。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/XiaoBin2001/BoundedGS
+
+### [mlslabs/MLSLabsGaussianSplattingRenderer-UE](https://github.com/mlslabs/MLSLabsGaussianSplattingRenderer-UE)
 
 - **主题：** 动态与4D
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T07:00:04Z
+- **发布时间/更新时间：** 2026-10-26T05:55:52Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** Code for "Segmenting Surgical Instruments Inside Dynamic Gaussian Splatting for Endoscopic Scene Reconstruction" (submitted to ISBI 2027). Full-scene dynamic Gaussian splatting with a per-Gaussian tool probability for 3D instrument segmentation and removal. Code coming soon.
+- **核心内容：** A high-performance Unreal Engine 5 (UE5) plugin developed by MaLanShan Audio & Video Laboratory, designed for real-time visualization, management, and scalable rendering of 3D Gaussian Splatting (3DGS) and dynamic Volumetric Video (4DGS).
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 可用于动态场景、Avatar、时序重建或可编辑运动表示预研。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/CJKorn/SurgSegGS
+- **代码仓库：** https://github.com/mlslabs/MLSLabsGaussianSplattingRenderer-UE
+
+### [RoMo-GS/romo-gs.github.io](https://github.com/RoMo-GS/romo-gs.github.io)
+
+- **主题：** 动态与4D
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-26T02:35:10Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Project homepage for RoMo-GS: Efficient Online 3D Gaussian Splatting for Robot Mapping via Exposure-Integrated Motion Blur (CoRL 2026 Poster).
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 可用于动态场景、Avatar、时序重建或可编辑运动表示预研。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/RoMo-GS/romo-gs.github.io
+
+### [Jibby2k1/Avatar](https://github.com/Jibby2k1/Avatar)
+
+- **主题：** 动态与4D
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T20:44:51Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Turn two phone videos into a drivable 3-D Gaussian avatar - a fitting/tracking layer on Gaussian Shell Maps (CVPR 2024)
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 可用于动态场景、Avatar、时序重建或可编辑运动表示预研。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/Jibby2k1/Avatar
 
 ### [WilliamLiu-1997/Gaussian-Splat-Lite](https://github.com/WilliamLiu-1997/Gaussian-Splat-Lite)
 
 - **主题：** 压缩与轻量化
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T05:50:45Z
+- **发布时间/更新时间：** 2026-10-25T23:32:13Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** High performance 3D Gaussian Splatting (3DGS) renderer for Three.js. WebGPU and WebGL2. Supports PLY, SPZ, Streaming LOD including SOG and RAD.
 - **成熟度：** E1
@@ -106,37 +197,76 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/WilliamLiu-1997/Gaussian-Splat-Lite
 
-### [Xget7/splatkit-ios](https://github.com/Xget7/splatkit-ios)
+### [LonganWANG-cs/GSVC](https://github.com/LonganWANG-cs/GSVC)
 
 - **主题：** 压缩与轻量化
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T22:45:06Z
+- **发布时间/更新时间：** 2026-10-26T06:10:52Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** Native Metal Gaussian splatting SDK for iOS: Swift view, GPU visibility/radix, experimental LOD and hybrid tiles. MIT source and reproducible XCFramework.
+- **核心内容：** GSVC: Efficient Video Representation and Compression Through 2D Gaussian Splatting (NOSSDAV 2025)
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 适合评估Web、移动端、流传输、存储成本和LOD管线。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/Xget7/splatkit-ios
+- **代码仓库：** https://github.com/LonganWANG-cs/GSVC
 
-### [PeizhiYan/gmesh](https://github.com/PeizhiYan/gmesh)
+### [atal-neupane/ai-research-assistant](https://github.com/atal-neupane/ai-research-assistant)
 
-- **主题：** 几何/材质/光照
+- **主题：** 压缩与轻量化
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T22:37:45Z
+- **发布时间/更新时间：** 2026-10-26T06:08:28Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** Gmesh supports differentiable rendering of mixed 3D Gaussians and meshes within a single scene.
+- **核心内容：** An open-source RAG assistant for one subfield (3D Gaussian Splatting compression) that answers questions with passage-level citations, extracts structured results (datasets, metrics, numbers) across papers, and ships with a published evaluation harness that measures how well it works.
 - **成熟度：** E1
 - **是否开源：** 是
-- **开发价值：** 可用于提升表面、法线、材质、反射或重照明能力。
+- **开发价值：** 适合评估Web、移动端、流传输、存储成本和LOD管线。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/PeizhiYan/gmesh
+- **代码仓库：** https://github.com/atal-neupane/ai-research-assistant
+
+### [nff747/hyper-splat-engine](https://github.com/nff747/hyper-splat-engine)
+
+- **主题：** 压缩与轻量化
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-26T01:45:46Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Zero-copy, virtualized WebGPU 3D Gaussian Splatting and spatial AI engine with distance LoD tile streaming and proactive VRAM paging.
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合评估Web、移动端、流传输、存储成本和LOD管线。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/nff747/hyper-splat-engine
+
+### [praveenpenumaka/dom-gaussian-splats](https://github.com/praveenpenumaka/dom-gaussian-splats)
+
+- **主题：** 压缩与轻量化
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T22:08:23Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** An experimental Gaussian splat renderer using ordinary DIV and SVG elements, exploring browser compositing, quantized depth ordering, CPU/WebGPU projection, and the practical performance limits of the DOM
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合评估Web、移动端、流传输、存储成本和LOD管线。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/praveenpenumaka/dom-gaussian-splats
+
+### [maviorgleam/Classical-Gardens-3DGS-Digital-Twin](https://github.com/maviorgleam/Classical-Gardens-3DGS-Digital-Twin)
+
+- **主题：** 压缩与轻量化
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T10:20:20Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Lightweight Reconstruction of Classical Gardens Based on 3D Gaussian Splatting
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合评估Web、移动端、流传输、存储成本和LOD管线。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/maviorgleam/Classical-Gardens-3DGS-Digital-Twin
 
 ### [sakorman/3dgs-mesh-compare](https://github.com/sakorman/3dgs-mesh-compare)
 
 - **主题：** 几何/材质/光照
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T03:28:28Z
+- **发布时间/更新时间：** 2026-10-26T03:38:00Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 同一组真实照片，对比 3DGS 与传统 Stereo + Poisson Mesh 的重建效果、浏览器性能和资源成本。
 - **成熟度：** E1
@@ -145,11 +275,37 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/sakorman/3dgs-mesh-compare
 
+### [timfennell/vintage-click](https://github.com/timfennell/vintage-click)
+
+- **主题：** 几何/材质/光照
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-26T01:54:46Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** A 1970s 35 mm SLR photography game inside 3D Gaussian splat scans, for Apple silicon Macs. Lens optics made by the renderer, film stocks, tungsten lighting, a light table and loupe.
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 可用于提升表面、法线、材质、反射或重照明能力。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/timfennell/vintage-click
+
+### [api-evangelist/spaitial](https://github.com/api-evangelist/spaitial)
+
+- **主题：** 几何/材质/光照
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-26T05:53:02Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** SpAItial — independent third-party profile of a public API surface, by API Evangelist. SpAItial (SpAItial Ltd, London) is a frontier spatial-AI lab building Echo, a world-model family that turns text prompts, images, and 360-degree panoramas into persistent, explorable 3D Gaussian Splat worlds (SPZ/SOG, plus mesh exports).
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 可用于提升表面、法线、材质、反射或重照明能力。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/api-evangelist/spaitial
+
 ### [cameornh/bardo](https://github.com/cameornh/bardo)
 
 - **主题：** 几何/材质/光照
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T06:12:18Z
+- **发布时间/更新时间：** 2026-10-25T21:07:57Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** A gaussian splatting / sdf physics sandbox
 - **成熟度：** E1
@@ -158,24 +314,24 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/cameornh/bardo
 
-### [kevinlisun/driveforge](https://github.com/kevinlisun/driveforge)
+### [TingdeLiu/Image2world](https://github.com/TingdeLiu/Image2world)
 
 - **主题：** 几何/材质/光照
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T22:10:24Z
+- **发布时间/更新时间：** 2026-10-25T12:13:20Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** DriveForge — a 3DGS-powered synthetic data engine for autonomous driving. Reconstruct real driving scenes with DriveStudio/OmniRe, insert traffic-sign Gaussian assets in a web editor, render trajectory-conditioned multi-camera sequences with depth/masks/2D-3D annotations, and relight them with Cosmos-Transfer2.5.
+- **核心内容：** Turn a single photo into a navigable 3D world — Gaussian splats with collision meshes, physics, and a scene editor. Local GPU or World Labs Marble.
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 可用于提升表面、法线、材质、反射或重照明能力。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/kevinlisun/driveforge
+- **代码仓库：** https://github.com/TingdeLiu/Image2world
 
 ### [luohongk/Embodied-AI-Daily](https://github.com/luohongk/Embodied-AI-Daily)
 
 - **主题：** SLAM与重建
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T19:25:25Z
+- **发布时间/更新时间：** 2026-10-25T19:44:45Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 📚这个仓库是在arxiv上收集的有关VLN，VLA，World Model，SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
 - **成熟度：** E1
@@ -188,7 +344,7 @@ item_count: 60
 
 - **主题：** SLAM与重建
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T04:39:13Z
+- **发布时间/更新时间：** 2026-10-26T04:28:37Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** SfM, visual-inertial SLAM, 3D Gaussian Splatting and localization in pure Rust
 - **成熟度：** E1
@@ -201,7 +357,7 @@ item_count: 60
 
 - **主题：** SLAM与重建
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T14:26:32Z
+- **发布时间/更新时间：** 2026-10-26T05:16:52Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 空間智能的跨 embodiment 手冊 —— 把 SLAM / VIO / 3D 表徵 / 感測器堆疊 / 部署坑 在 機械臂 / 無人機 / 自駕 / 人形 / 水下 之間橫向比較，底層共用 3DGS / VGGT / depth foundation。照見三冊 perception 端（VLA-Handbook + Physics-Controllable-Generation-Handbook 姊妹倉）。
 - **成熟度：** E1
@@ -210,24 +366,11 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/sou350121/Spatial-Intelligence-Handbook
 
-### [Human-Augment-Analytics/porto-photogrammetry](https://github.com/Human-Augment-Analytics/porto-photogrammetry)
-
-- **主题：** SLAM与重建
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T18:00:21Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** A photogrammetry pipeline for high-fidelity 3D object reconstruction from multi-view images.
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合相机定位、在线建图、工程测绘和大场景重建验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/Human-Augment-Analytics/porto-photogrammetry
-
 ### [x-kimi-chen/Universal-Scene-Forge](https://github.com/x-kimi-chen/Universal-Scene-Forge)
 
 - **主题：** SLAM与重建
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T14:07:56Z
+- **发布时间/更新时间：** 2026-10-25T15:29:09Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** Universal Scene Forge：桌面端一体化 3D 场景重建与导出工具。视频/图像 → 3DGS 重建 → Blender/Metashape/Maya/UE5 后处理 → FBX/OBJ/GLB/.blend/.uasset。项目仍在完善，欢迎二次开发。 / Desktop all-in-one 3D scene reconstruction & export. Video/images → 3DGS → DCC (Blender/Metashape/Maya/UE5) → FBX/OBJ/GLB/.blend/.uasset. WIP; forks and contributions welcome.
 - **成熟度：** E1
@@ -236,24 +379,11 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/x-kimi-chen/Universal-Scene-Forge
 
-### [KINGAZ1019/XFreq-GS](https://github.com/KINGAZ1019/XFreq-GS)
-
-- **主题：** SLAM与重建
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T06:10:23Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** [Accepted at IEEE GLOBECOM 2026] XFreq-GS: Cross-Frequency Wireless Radiation Field Reconstruction with 3D Gaussian Splatting
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合相机定位、在线建图、工程测绘和大场景重建验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/KINGAZ1019/XFreq-GS
-
 ### [koroltony/UCLA_Gateway_Plaza_3DGS](https://github.com/koroltony/UCLA_Gateway_Plaza_3DGS)
 
 - **主题：** SLAM与重建
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T01:58:19Z
+- **发布时间/更新时间：** 2026-10-26T01:59:45Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 3DGS Reconstruction of UCLA Gateway Plaza from unstaged outdoor scene video
 - **成熟度：** E1
@@ -266,7 +396,7 @@ item_count: 60
 
 - **主题：** SLAM与重建
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T01:14:26Z
+- **发布时间/更新时间：** 2026-10-26T01:14:59Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 近期活跃的GS相关仓库。
 - **成熟度：** E1
@@ -279,7 +409,7 @@ item_count: 60
 
 - **主题：** SLAM与重建
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T01:05:53Z
+- **发布时间/更新时间：** 2026-10-25T23:20:23Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** SkyLens - Multi-drone disaster intelligence: 3DGS reconstruction + 4-channel UNet perception
 - **成熟度：** E1
@@ -288,102 +418,89 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/NET-Challenge-S13/skylens
 
-### [eust-w/gsstudio-public](https://github.com/eust-w/gsstudio-public)
+### [KalmBoolean/Forensic-Twin-Initial](https://github.com/KalmBoolean/Forensic-Twin-Initial)
 
 - **主题：** SLAM与重建
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T19:26:29Z
+- **发布时间/更新时间：** 2026-10-26T03:50:16Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** Web workspace for HY-World generation and reconstruction with task recovery and a 3D Gaussian Splatting viewer. Source preview; bring your own GPU runtime.
+- **核心内容：** Initial base repo for Major project. Uses Gaussian splatting for reconstruction from images.
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 适合相机定位、在线建图、工程测绘和大场景重建验证。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/eust-w/gsstudio-public
+- **代码仓库：** https://github.com/KalmBoolean/Forensic-Twin-Initial
 
-### [dewminawijekoon/splat-and-seek](https://github.com/dewminawijekoon/splat-and-seek)
+### [gusgusr9s/3dgs-colmap-from-360camera](https://github.com/gusgusr9s/3dgs-colmap-from-360camera)
 
 - **主题：** SLAM与重建
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T05:45:17Z
+- **发布时间/更新时间：** 2026-10-25T14:04:14Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** Few-watt Gaussian Splatting localizer for robots in GPS-denied, radio-silent sites. A PolarFire SoC FPGA engine renders hundreds of candidate poses from a 3D map and scores them against the camera.
+- **核心内容：** 近期活跃的GS相关仓库。
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 适合相机定位、在线建图、工程测绘和大场景重建验证。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/dewminawijekoon/splat-and-seek
+- **代码仓库：** https://github.com/gusgusr9s/3dgs-colmap-from-360camera
 
-### [Camellia2222/UEGS-SLAM](https://github.com/Camellia2222/UEGS-SLAM)
+### [yfwang0824/MCSplat](https://github.com/yfwang0824/MCSplat)
 
-- **主题：** SLAM与重建
+- **主题：** 少视角与前馈
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T20:17:01Z
+- **发布时间/更新时间：** 2026-10-26T06:38:58Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** UEGS-SLAM: Uncertainty-Aware Event Gaussian Splatting SLAM
+- **核心内容：** [NeurIPS2026] Official implementation of MCSplat: Multi-View Photometric and Geometric Consistent Feed-Forward Gaussian Splatting for Driving Scenes
 - **成熟度：** E1
 - **是否开源：** 是
-- **开发价值：** 适合相机定位、在线建图、工程测绘和大场景重建验证。
+- **开发价值：** 适合减少采集成本、缩短建模周期或探索前馈式重建。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/Camellia2222/UEGS-SLAM
+- **代码仓库：** https://github.com/yfwang0824/MCSplat
 
-### [heqi-zh/heqi-zh.github.io](https://github.com/heqi-zh/heqi-zh.github.io)
+### [mnmly/mlx-swift-ml-sharp](https://github.com/mnmly/mlx-swift-ml-sharp)
 
-- **主题：** SLAM与重建
+- **主题：** 少视角与前馈
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T19:32:10Z
+- **发布时间/更新时间：** 2026-10-26T06:56:55Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** Hang Zhen — academic homepage | SLAM, 3D Gaussian Splatting, and Agentic Robot
+- **核心内容：** mlx-swift port of Apple's ml-sharp: a feed-forward predictor that turns a single RGB image into a 3D Gaussian Splatting scene.
 - **成熟度：** E1
 - **是否开源：** 是
-- **开发价值：** 适合相机定位、在线建图、工程测绘和大场景重建验证。
+- **开发价值：** 适合减少采集成本、缩短建模周期或探索前馈式重建。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/heqi-zh/heqi-zh.github.io
+- **代码仓库：** https://github.com/mnmly/mlx-swift-ml-sharp
 
-### [imsquner/3dgs-reconstruction](https://github.com/imsquner/3dgs-reconstruction)
-
-- **主题：** SLAM与重建
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T10:18:11Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** RGB-D 3DGS reconstruction algorithms, reproducible adapters and interactive web viewer
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合相机定位、在线建图、工程测绘和大场景重建验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/imsquner/3dgs-reconstruction
-
-### [DrawingProcess/RelateGS](https://github.com/DrawingProcess/RelateGS)
+### [smlab-niser/clean-gs](https://github.com/smlab-niser/clean-gs)
 
 - **主题：** 编辑与生成
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T18:42:33Z
+- **发布时间/更新时间：** 2026-10-26T03:38:08Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** [WACV'27] RelateGS: Reliable Semantic and Relational Evidence for 3D Scene Understanding with Gaussian Splatting
+- **核心内容：** Remove background and artifacts from 3D Gaussian Splatting models using semantic masks and color validation.
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 可用于对象提取、语义分层、内容编辑和生成式资产工作流。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/DrawingProcess/RelateGS
+- **代码仓库：** https://github.com/smlab-niser/clean-gs
 
-### [Neocvsu-commits/Blender-GSEditor](https://github.com/Neocvsu-commits/Blender-GSEditor)
+### [bkuangs/semantic-3dgs](https://github.com/bkuangs/semantic-3dgs)
 
 - **主题：** 编辑与生成
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T07:52:00Z
+- **发布时间/更新时间：** 2026-10-25T15:08:39Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** Blender 5.3+ 高斯泼溅（3DGS）点云编辑插件：擦除、还原，以及吸附到表面的矩形面片覆盖
+- **核心内容：** Semantic 3DGS for Argoverse 2
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 可用于对象提取、语义分层、内容编辑和生成式资产工作流。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/Neocvsu-commits/Blender-GSEditor
+- **代码仓库：** https://github.com/bkuangs/semantic-3dgs
 
 ### [longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)
 
 - **主题：** 实时渲染与展示
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T02:15:07Z
+- **发布时间/更新时间：** 2026-10-26T02:15:13Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **成熟度：** E1
@@ -392,154 +509,37 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/longxiang-ai/awesome-gaussians
 
-### [mosure/bevy_gaussian_splatting](https://github.com/mosure/bevy_gaussian_splatting)
+### [thunderheronight/splat-workshop](https://github.com/thunderheronight/splat-workshop)
 
 - **主题：** 实时渲染与展示
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T23:46:11Z
+- **发布时间/更新时间：** 2026-10-25T10:13:13Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** bevy gaussian splatting render pipeline plugin 🕊️🌌
+- **核心内容：** GUI for the Arcturus Vision splat pipeline: pick, check and convert Steam Frame camera recordings and send them to the Gaussian XR gallery
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/mosure/bevy_gaussian_splatting
+- **代码仓库：** https://github.com/thunderheronight/splat-workshop
 
-### [jaccen/Awesome-Gaussian-Skills](https://github.com/jaccen/Awesome-Gaussian-Skills)
+### [Saqoosha/ghostline](https://github.com/Saqoosha/ghostline)
 
 - **主题：** 实时渲染与展示
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T00:03:31Z
+- **发布时间/更新时间：** 2026-10-26T06:47:51Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** 900 arXiv-verified 3DGS methods · 15 AI agent skills · MCP server (34 tools) · open ebook — the AI-native entry to 3D Gaussian Splatting research
+- **核心内容：** Recover FPV flight paths from goggle DVR on a 3DGS scan, and replay them
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/jaccen/Awesome-Gaussian-Skills
-
-### [Extwin-Synthesis/Synthesis-Assets-Explorer](https://github.com/Extwin-Synthesis/Synthesis-Assets-Explorer)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T05:58:13Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** Synthesis Asset Explorer is an Omniverse&Isaac sim extension for loading high quality open source USD asserts, including photorealistic articulated sim-ready assets, architectural models, 3D Gaussian Splatting models, and 1:1 real-world fully interactive simulation scenes from
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/Extwin-Synthesis/Synthesis-Assets-Explorer
-
-### [Xget7/splatkit](https://github.com/Xget7/splatkit)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T22:32:26Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** Real-time Gaussian splatting SDKs for Android/Vulkan, iOS/Metal and React Native, sharing a C++17 engine.
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/Xget7/splatkit
-
-### [JingyuanGao0919/physir-splat](https://github.com/JingyuanGao0919/physir-splat)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T06:43:19Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** PhysIR-Splat: physically consistent thermal infrared radiative transfer for 3D Gaussian Splatting.
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/JingyuanGao0919/physir-splat
-
-### [affromero/splattie](https://github.com/affromero/splattie)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T17:59:09Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** Generate rigged interactive 3D Gaussian assets for the web.
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/affromero/splattie
-
-### [LioQing/wgpu-3dgs-core](https://github.com/LioQing/wgpu-3dgs-core)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T15:58:00Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** 3D Gaussian Splatting Library written in Rust using wgpu.
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/LioQing/wgpu-3dgs-core
-
-### [changruizhu96/Unity-XR-3DGS-Toolkit](https://github.com/changruizhu96/Unity-XR-3DGS-Toolkit)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T15:13:16Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** Unity toolkit for 3D Gaussian Splatting (3DGS) in VR and mixed reality (XR), with Meta Quest registration, passthrough interaction, and spatial anchors. Originally developed for MR-Compare.
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/changruizhu96/Unity-XR-3DGS-Toolkit
-
-### [taesoobear/libcalab_examples](https://github.com/taesoobear/libcalab_examples)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T03:51:12Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** Examples such as gaussian splat rendering using libcalab and ogre-python
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/taesoobear/libcalab_examples
-
-### [affromero/splattie-widget](https://github.com/affromero/splattie-widget)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T17:26:31Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** Interactive rigged 3D Gaussian Splatting web component - like Rive/Lottie for 3D.
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/affromero/splattie-widget
-
-### [Xget7/react-native-splatkit](https://github.com/Xget7/react-native-splatkit)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T22:45:04Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** React Native component for real-time Gaussian splatting: load an SPZ scene, pick a quality preset, and walk through it from JavaScript.
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/Xget7/react-native-splatkit
+- **代码仓库：** https://github.com/Saqoosha/ghostline
 
 ### [Loppas/playcanvas-quake3](https://github.com/Loppas/playcanvas-quake3)
 
 - **主题：** 实时渲染与展示
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T21:05:15Z
+- **发布时间/更新时间：** 2026-10-25T22:36:57Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** A port of ioquake to the Playcanvas engine with the added ability to render gaussian splat maps
 - **成熟度：** E1
@@ -548,11 +548,50 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/Loppas/playcanvas-quake3
 
+### [kamyy/ai-gaussian-splatter](https://github.com/kamyy/ai-gaussian-splatter)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-26T02:54:17Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Upload multi-angle photos of a physical object, get back a real-time 3D Gaussian Splat viewable and shareable in-browser
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/kamyy/ai-gaussian-splatter
+
+### [janagor/vkgsplat](https://github.com/janagor/vkgsplat)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T19:49:41Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Vulkan-based rendering engine for 3D Gaussian Splatting.
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/janagor/vkgsplat
+
+### [szx-a/cli-web-3dgs](https://github.com/szx-a/cli-web-3dgs)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T16:21:57Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** 3dgs训练
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/szx-a/cli-web-3dgs
+
 ### [Archerkattri/Archerkattri](https://github.com/Archerkattri/Archerkattri)
 
 - **主题：** 实时渲染与展示
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T06:56:22Z
+- **发布时间/更新时间：** 2026-10-26T07:05:37Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** Research portfolio — certified/calibrated ML systems: 3DGS confidence (AURA), splat registration (splatreg), certified planning (CERT-FLOW), diffusion caching (HiCache++), robot action-interface adaptation (ActionShift/ActionABI)
 - **成熟度：** E1
@@ -561,76 +600,50 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/Archerkattri/Archerkattri
 
-### [BagasCaturS/sharp-web-3DGS-Viewer](https://github.com/BagasCaturS/sharp-web-3DGS-Viewer)
+### [Yhg1123/guzhi-tianmou](https://github.com/Yhg1123/guzhi-tianmou)
 
 - **主题：** 实时渲染与展示
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T05:08:53Z
+- **发布时间/更新时间：** 2026-10-26T03:02:01Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** 古址天眸：基于 WebGIS 的古遗址空间研究与保护辅助系统，支持环境因子分析、遗址档案管理、保护范围核查与 3D Gaussian Splatting 模型展示。
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/Yhg1123/guzhi-tianmou
+
+### [WarriorHanamy/3dgs-scenes](https://github.com/WarriorHanamy/3dgs-scenes)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-26T01:04:55Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 近期活跃的GS相关仓库。
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/BagasCaturS/sharp-web-3DGS-Viewer
+- **代码仓库：** https://github.com/WarriorHanamy/3dgs-scenes
 
-### [monstercameron/NeuralVisionRacer](https://github.com/monstercameron/NeuralVisionRacer)
+### [sophsth/BarbicanSplat](https://github.com/sophsth/BarbicanSplat)
 
 - **主题：** 实时渲染与展示
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T04:36:55Z
+- **发布时间/更新时间：** 2026-10-25T19:55:18Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** A Rust racing game through real-world Gaussian splat scans, with native wgpu and browser WebGPU builds.
+- **核心内容：** In browser Gaussian Splat viewer
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/monstercameron/NeuralVisionRacer
-
-### [tykx1373/3DGS-Smart-System](https://github.com/tykx1373/3DGS-Smart-System)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T04:15:32Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** 3DGS轻量化适配
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/tykx1373/3DGS-Smart-System
-
-### [STEVVVU/gaussian-splat-renderer](https://github.com/STEVVVU/gaussian-splat-renderer)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T03:10:34Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** WebGPU Gaussian splat renderer with covariance projection, GPU radix sorting, spherical harmonics, and pixel readback checks; based on UPenn CIS5650.
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/STEVVVU/gaussian-splat-renderer
-
-### [gylshaurya/3DDD](https://github.com/gylshaurya/3DDD)
-
-- **主题：** 实时渲染与展示
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T01:25:59Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** Turn a phone video into a photoreal 3D scene you can explore in the browser (3D Gaussian Splatting + WebGPU)
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/gylshaurya/3DDD
+- **代码仓库：** https://github.com/sophsth/BarbicanSplat
 
 ### [3XyzMedia/VIEWER](https://github.com/3XyzMedia/VIEWER)
 
 - **主题：** 实时渲染与展示
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T23:54:49Z
+- **发布时间/更新时间：** 2026-10-25T17:57:43Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** Любительские модели 3DGS
 - **成熟度：** E1
@@ -639,11 +652,102 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/3XyzMedia/VIEWER
 
+### [firefly1145141919810/cg-3dgs-baseline](https://github.com/firefly1145141919810/cg-3dgs-baseline)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T15:22:29Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Reproducible original 3D Gaussian Splatting baseline and Chinese learning notes
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/firefly1145141919810/cg-3dgs-baseline
+
+### [ChepuriNatraj/nammaspace-results-temp](https://github.com/ChepuriNatraj/nammaspace-results-temp)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T13:40:32Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Temporary public delivery of NammaSpace 3DGS results. Delete after download.
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/ChepuriNatraj/nammaspace-results-temp
+
+### [Yangblingyi123/3DGS](https://github.com/Yangblingyi123/3DGS)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T13:15:01Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** 论文3D Gaussian SpIatting for Real-Ti me Radiance Field Rendering代码复现
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/Yangblingyi123/3DGS
+
+### [DX3906199/trailer-perception](https://github.com/DX3906199/trailer-perception)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T13:04:26Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** DINOv2 five-keypoint trailer detection, fisheye articulated PnP, and MuJoCo/3DGS scenes
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/DX3906199/trailer-perception
+
+### [tykx1373/3DGS-Smart-System](https://github.com/tykx1373/3DGS-Smart-System)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T12:41:08Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** 3DGS轻量化适配
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/tykx1373/3DGS-Smart-System
+
+### [XiaoBin2001/ParetoGS](https://github.com/XiaoBin2001/ParetoGS)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T11:25:49Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** ParetoGS: High-Quality Continuous-Budget 3DGS
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/XiaoBin2001/ParetoGS
+
+### [BagasCaturS/sharp-web-3DGS-Viewer](https://github.com/BagasCaturS/sharp-web-3DGS-Viewer)
+
+- **主题：** 实时渲染与展示
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T09:48:20Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** 近期活跃的GS相关仓库。
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 适合Web、移动端、VR/AR与实时Viewer的性能验证。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/BagasCaturS/sharp-web-3DGS-Viewer
+
 ### [ArchitectureWorld/3dgs-pano](https://github.com/ArchitectureWorld/3dgs-pano)
 
 - **主题：** 实时渲染与展示
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T06:44:59Z
+- **发布时间/更新时间：** 2026-10-25T07:09:43Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 近期活跃的GS相关仓库。
 - **成熟度：** E1
@@ -652,50 +756,50 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/ArchitectureWorld/3dgs-pano
 
-### [Nyveon/Splatour](https://github.com/Nyveon/Splatour)
+### [cmfight/3dgs-studio](https://github.com/cmfight/3dgs-studio)
+
+- **主题：** 工业产品与平台
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-26T02:31:53Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** 近期活跃的GS相关仓库。
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 可用于判断产品集成、交互体验和商业化成熟度。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/cmfight/3dgs-studio
+
+### [yindaheng98/feature-3dgs](https://github.com/yindaheng98/feature-3dgs)
 
 - **主题：** 其他
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T01:03:27Z
+- **发布时间/更新时间：** 2026-10-25T22:16:01Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** Three.js-based 3D Gaussian splatting map-making and virtual tour system
+- **核心内容：** Feature 3DGS (Packaged Python Version)
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 作为相邻技术线索进入持续跟踪池。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/Nyveon/Splatour
+- **代码仓库：** https://github.com/yindaheng98/feature-3dgs
 
-### [dwwwwwww7/my-3dgs](https://github.com/dwwwwwww7/my-3dgs)
+### [ZEHUEI/RotorAI](https://github.com/ZEHUEI/RotorAI)
 
 - **主题：** 其他
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T03:15:44Z
+- **发布时间/更新时间：** 2026-10-25T13:39:18Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** 本项目基于https://github.com/longxiang-ai/awesome-gaussians 修改，丰富了论文信息，增加摘要翻译和邮件发送功能，用于检索3DGS压缩最新论文。
+- **核心内容：** just someone looking into 3DGS n NeRF : https://www.worldlabs.ai/ is my inspo
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 作为相邻技术线索进入持续跟踪池。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/dwwwwwww7/my-3dgs
-
-### [zchming/GeoSplat-R](https://github.com/zchming/GeoSplat-R)
-
-- **主题：** 其他
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T03:42:47Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** 稀疏视角 3D Gaussian Splatting 的几何可靠性优化。
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 作为相邻技术线索进入持续跟踪池。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/zchming/GeoSplat-R
+- **代码仓库：** https://github.com/ZEHUEI/RotorAI
 
 ### [ZhaoRunRunRun/3dgs-tracker](https://github.com/ZhaoRunRunRun/3dgs-tracker)
 
 - **主题：** 其他
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T07:27:56Z
+- **发布时间/更新时间：** 2026-10-25T09:27:40Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 3DGS论文追踪器 - 实时追踪3D Gaussian Splatting最新论文
 - **成熟度：** E1
@@ -704,37 +808,24 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/ZhaoRunRunRun/3dgs-tracker
 
-### [weeeha/location-lab](https://github.com/weeeha/location-lab)
+### [wook-exe/3DGS](https://github.com/wook-exe/3DGS)
 
 - **主题：** 其他
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-25T01:37:43Z
+- **发布时间/更新时间：** 2026-10-26T03:47:28Z
 - **更新判定：** 新项目/近期活跃
-- **核心内容：** Scout a real place as a Gaussian splat and export Seedance 2.0 reference packs
+- **核心内容：** 近期活跃的GS相关仓库。
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 作为相邻技术线索进入持续跟踪池。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/weeeha/location-lab
-
-### [jackhu24-ship-it/phantom-grid-auravto-skinsense](https://github.com/jackhu24-ship-it/phantom-grid-auravto-skinsense)
-
-- **主题：** 其他
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T18:53:37Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** PHANToM GRID :: AuraVTO & SkinSense AI Nexus (YouCam API Skin AI & eCommerce VTO Hackathon)
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 作为相邻技术线索进入持续跟踪池。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/jackhu24-ship-it/phantom-grid-auravto-skinsense
+- **代码仓库：** https://github.com/wook-exe/3DGS
 
 ### [Primal555/3dgs-importance](https://github.com/Primal555/3dgs-importance)
 
 - **主题：** 其他
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T15:27:09Z
+- **发布时间/更新时间：** 2026-10-26T02:51:28Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 近期活跃的GS相关仓库。
 - **成熟度：** E1
@@ -743,63 +834,37 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/Primal555/3dgs-importance
 
-### [UnicornGlade/monoceros-3dgs-bugtracker](https://github.com/UnicornGlade/monoceros-3dgs-bugtracker)
+### [yangyixi21/Neural-Color-Fields-3DGS](https://github.com/yangyixi21/Neural-Color-Fields-3DGS)
 
 - **主题：** 其他
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T14:15:57Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** Bug tracker for Monoceros 3DGS - monoceros.tech
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 作为相邻技术线索进入持续跟踪池。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/UnicornGlade/monoceros-3dgs-bugtracker
-
-### [enhansome/enhansome-3dgs](https://github.com/enhansome/enhansome-3dgs)
-
-- **主题：** 其他
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T14:07:08Z
+- **发布时间/更新时间：** 2026-10-26T02:43:15Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 近期活跃的GS相关仓库。
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 作为相邻技术线索进入持续跟踪池。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/enhansome/enhansome-3dgs
+- **代码仓库：** https://github.com/yangyixi21/Neural-Color-Fields-3DGS
 
-### [knt0613pow/DCF-3DGS](https://github.com/knt0613pow/DCF-3DGS)
+### [Dazhuang-Yang/pahc-3dgs](https://github.com/Dazhuang-Yang/pahc-3dgs)
 
 - **主题：** 其他
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T12:01:55Z
+- **发布时间/更新时间：** 2026-10-26T02:34:19Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** 近期活跃的GS相关仓库。
 - **成熟度：** E1
 - **是否开源：** 是
 - **开发价值：** 作为相邻技术线索进入持续跟踪池。
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/knt0613pow/DCF-3DGS
-
-### [calculator29/campus-world-3dgs](https://github.com/calculator29/campus-world-3dgs)
-
-- **主题：** 其他
-- **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T08:57:45Z
-- **更新判定：** 新项目/近期活跃
-- **核心内容：** Offline generated photo-based 3DGS campus demo
-- **成熟度：** E1
-- **是否开源：** 是
-- **开发价值：** 作为相邻技术线索进入持续跟踪池。
-- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
-- **代码仓库：** https://github.com/calculator29/campus-world-3dgs
+- **代码仓库：** https://github.com/Dazhuang-Yang/pahc-3dgs
 
 ### [hous-lab/pansplat-trt-edge-orin](https://github.com/hous-lab/pansplat-trt-edge-orin)
 
 - **主题：** 其他
 - **来源：** GitHub Search
-- **发布时间/更新时间：** 2026-10-24T08:17:01Z
+- **发布时间/更新时间：** 2026-10-26T01:24:46Z
 - **更新判定：** 新项目/近期活跃
 - **核心内容：** PanSplat panoramic 3DGS deployed as a 21-engine TensorRT chain on Jetson AGX Orin - 30 s/frame down to ~567 ms
 - **成熟度：** E1
@@ -808,12 +873,90 @@ item_count: 60
 - **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
 - **代码仓库：** https://github.com/hous-lab/pansplat-trt-edge-orin
 
+### [T-Tatsuya-W/3dgs-experiments](https://github.com/T-Tatsuya-W/3dgs-experiments)
+
+- **主题：** 其他
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T22:32:41Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** 近期活跃的GS相关仓库。
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 作为相邻技术线索进入持续跟踪池。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/T-Tatsuya-W/3dgs-experiments
+
+### [weeeha/location-lab](https://github.com/weeeha/location-lab)
+
+- **主题：** 其他
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T20:34:14Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** Scout a real place as a Gaussian splat and export Seedance 2.0 reference packs
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 作为相邻技术线索进入持续跟踪池。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/weeeha/location-lab
+
+### [dohun1214/roomlens](https://github.com/dohun1214/roomlens)
+
+- **主题：** 其他
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T19:45:41Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** RoomLens - room 3D tour (Gaussian Splatting) and furniture layout simulator
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 作为相邻技术线索进入持续跟踪池。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/dohun1214/roomlens
+
+### [B2mbiczek/supersplat-3dgs-downloader](https://github.com/B2mbiczek/supersplat-3dgs-downloader)
+
+- **主题：** 其他
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T15:07:41Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** A utility to download and convert SuperSplat 3DGS scenes to PLY format, bypassing UI restrictions where direct download is disabled.
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 作为相邻技术线索进入持续跟踪池。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/B2mbiczek/supersplat-3dgs-downloader
+
+### [enhansome/enhansome-3dgs](https://github.com/enhansome/enhansome-3dgs)
+
+- **主题：** 其他
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T14:34:07Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** 近期活跃的GS相关仓库。
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 作为相邻技术线索进入持续跟踪池。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/enhansome/enhansome-3dgs
+
+### [wkgreat/gsplatlab](https://github.com/wkgreat/gsplatlab)
+
+- **主题：** 其他
+- **来源：** GitHub Search
+- **发布时间/更新时间：** 2026-10-25T12:45:07Z
+- **更新判定：** 新项目/近期活跃
+- **核心内容：** gaussian splat (3dgs) lab
+- **成熟度：** E1
+- **是否开源：** 是
+- **开发价值：** 作为相邻技术线索进入持续跟踪池。
+- **局限：** 近期活跃或可演示不代表工程稳定，应核对许可、测试、维护者活跃度和可复现性。
+- **代码仓库：** https://github.com/wkgreat/gsplatlab
+
 ## 数据源状态
 
 | 数据源 | 状态 |
 |---|---|
 | arXiv | ok: 0 |
-| GitHub | ok: 60 |
+| GitHub | ok: 71 |
 | Hugging Face | ok: 0 |
 | Reddit | degraded: HTTPError: HTTP Error 403: Blocked |
 | Bing News | ok: 0 |
